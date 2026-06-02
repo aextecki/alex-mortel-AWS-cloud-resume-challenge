@@ -3,221 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Mortel | Google Cloud Security Engineer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Alex Mortel | AWS Cloud & DevSecOps Engineer</title>
     <style>
-        body { font-family: 'Segoe UI', system-ui, sans-serif; }
-        .hero-bg { background: linear-gradient(135deg, #1a73e8, #0d47a1); }
+        :root {
+            --primary-color: #232f3e; /* AWS Dark Blue */
+            --secondary-color: #ff9900; /* AWS Orange */
+            --text-color: #333333;
+            --bg-color: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin: 0 0 5px 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin: 0 0 15px 0;
+        }
+
+        .contact-info {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            color: var(--secondary-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .visitor-box {
+            background-color: #eef2f7;
+            border-left: 4px solid var(--secondary-color);
+            padding: 10px 15px;
+            margin: 20px 0;
+            font-weight: bold;
+            display: inline-block;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .skills-category strong {
+            color: var(--primary-color);
+        }
+
+        .job {
+            margin-bottom: 25px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #222;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .company {
+            color: var(--secondary-color);
+            font-style: italic;
+        }
+
+        .job-date {
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        ul {
+            margin: 5px 0 0 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .cert-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .cert-list li {
+            padding: 5px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .cert-list li:last-child {
+            border-bottom: none;
+        }
+
+        .badge {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2px 6px;
+            font-size: 0.75rem;
+            border-radius: 3px;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+
+        .badge-aws {
+            background-color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 20px;
+            }
+            .job-title {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body>
 
-    <!-- HERO -->
-    <header class="hero-bg text-white py-20">
-        <div class="max-w-4xl mx-auto text-center px-6">
-            <h1 class="text-5xl font-bold mb-2">Alex Mortel</h1>
-            <p class="text-2xl mb-6">Google Cloud Security Engineer | Cyber Security Analyst</p>
-            <div class="flex flex-wrap justify-center gap-6 text-lg">
-                <a href="mailto:alex.mortel@outlook.com" class="flex items-center gap-2 hover:underline">
-                    <i class="fas fa-envelope"></i> alex.mortel@outlook.com
-                </a>
-                <a href="tel:+639459755703" class="flex items-center gap-2 hover:underline">
-                    <i class="fas fa-phone"></i> +63 945 975 5703
-                </a>
-                <a href="https://linkedin.com/in/alex-mortel" target="_blank" class="flex items-center gap-2 hover:underline">
-                    <i class="fab fa-linkedin"></i> linkedin.com/in/alex-mortel
-                </a>
-                <p class="flex items-center gap-2">
-                    <i class="fas fa-map-marker-alt"></i> Parañaque City, Philippines
-                </p>
-            </div>
+<div class="container">
+    <header>
+        <h1>Alex Mortel</h1>
+        <div class="subtitle">AWS Cloud Engineer</div>
+        <div class="contact-info">
+            📍 8C Rizal St. Tuy Batangas, 4241 | 📱 +639459755703 | ✉️ <a href="mailto:alex.mortel@outlook.com">alex.mortel@outlook.com</a><br>
+            🔗 <a href="https://linkedin.com/in/alex-mortel" target="_blank">linkedin.com/in/alex-mortel</a> | 💻 <a href="https://github.com/aextecki" target="_blank">github.com/aextecki</a>
+        </div>
+        
+        <!-- Cloud Resume Challenge Visitor Counter Display -->
+        <div class="visitor-box">
+            🛡️ Cloud Architecture Verified: This page has been viewed <span id="counter">0</span> times!
         </div>
     </header>
 
-    <div class="max-w-4xl mx-auto px-6 py-12">
+    <section id="summary">
+        <h2>Professional Summary</h2>
+        <p>
+            Certified Linux and Cloud Systems Administrator combining hands-on infrastructure management (50+ AWS/Azure servers) with a deep passion for security remediation and malware analysis. Proven track record in cloud migration, server hardening, and executing vulnerability fixes to achieve 100% compliance in high-stakes environments. Adept at leveraging an analytical security mindset to design robust, threat-resistant serverless architecture and automated deployment pipelines.
+        </p>
+    </section>
 
-        <!-- SUMMARY -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-semibold text-[#1a73e8] mb-6 border-b pb-3">Professional Summary</h2>
-            <p class="text-lg leading-relaxed">
-                Google Cloud Cybersecurity Certificate holder with proven experience securing cloud and on-premise infrastructure for Philippine government projects. 
-                Specialized in vulnerability remediation, server hardening, secure cloud migration (lift-and-shift), and compliance. 
-                Hands-on with AWS and Azure environments, now applying Google Cloud security best practices (IAM, VPC, firewall rules, and Security Command Center concepts) 
-                to deliver 100% compliance results. Strong Linux administration, DevOps, and VAPT remediation skills ready for entry- to mid-level Google Cloud security roles.
-            </p>
-        </section>
+    <section id="certifications">
+        <h2>Certifications & Badges</h2>
+        <ul class="cert-list">
+            <li><strong>AWS Certified Cloud Practitioner</strong> <span class="badge badge-aws">New</span></li>
+            <li><strong>AWS Cloud Quest: Cloud Practitioner</strong> <span class="badge badge-aws">Training Badge</span></li>
+            <li><strong>AWS Re/Start Cloud Architect</strong></li>
+            <li><strong>LPIC-1: Certified Linux Administrator</strong></li>
+            <li><strong>CompTIA Linux+</strong> (Powered by LPI)</li>
+            <li><strong>Google Cybersecurity Professional Certificate V2</strong></li>
+            <li><strong>Microsoft Azure Fundamentals</strong></li>
+            <li><strong>VMware IT Academy:</strong> Cloud and Virtualization Concepts</li>
+            <li><strong>Fundamentals of Red Hat & SUSE</strong></li>
+        </ul>
+    </section>
 
-        <!-- EXPERIENCE -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-semibold text-[#1a73e8] mb-6 border-b pb-3">Work Experience</h2>
-            
-            <div class="mb-10">
-                <div class="flex justify-between items-start">
-                    <div>
-                        <h3 class="text-xl font-bold">OJT – Cybersecurity Junior PenTest (Mentee)</h3>
-                        <p class="text-gray-600">Anak Asuh Cyber (AAC Program) • Mentored by Doc. Semi Yulianto</p>
-                    </div>
-                    <p class="text-sm text-gray-500">Jan 2026 – Present (3 months)</p>
-                </div>
-                <ul class="mt-4 list-disc pl-6 space-y-2 text-gray-700">
-                    <li>Practiced identifying and exploiting OWASP Top 10 vulnerabilities using industry-standard tools (Burp Suite, OWASP ZAP, Nmap, sqlmap).</li>
-                    <li>Completed intensive hands-on training in ethical hacking and penetration testing fundamentals (reconnaissance, scanning, exploitation, post-exploitation, and reporting).</li>
-                </ul>
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skills-category">
+                <strong>Cloud Computing:</strong> AWS (EC2, VPC, S3, IAM, CloudWatch), Azure, GCP
             </div>
-
-            <div class="mb-10">
-                <div class="flex justify-between items-start">
-                    <div>
-                        <h3 class="text-xl font-bold">Linux System Administrator</h3>
-                        <p class="text-gray-600">Department of Information and Communication Technology (DICT)</p>
-                    </div>
-                    <p class="text-sm text-gray-500">Aug – Oct 2022 (3 months)</p>
-                </div>
-                <ul class="mt-4 list-disc pl-6 space-y-2 text-gray-700">
-                    <li>Secured and managed 50+ CentOS/Ubuntu servers (on-premise + AWS/Azure) for national government projects.</li>
-                    <li>Remediated 50+ critical and high-risk vulnerabilities (NCERT), achieving 100% compliance.</li>
-                    <li>Created VM images, cloning, and managing snapshots for AWS EC2 backup.</li>
-                    <li>Handled migration and deployment from on-prem to cloud using lift-and-shift.</li>
-                </ul>
+            <div class="skills-category">
+                <strong>Operating Systems:</strong> Linux (RHEL, Ubuntu, CentOS, SUSE)
             </div>
-
-            <div class="mb-10">
-                <div class="flex justify-between items-start">
-                    <div>
-                        <h3 class="text-xl font-bold">Junior Linux System Administrator</h3>
-                        <p class="text-gray-600">8layer Technologies • Pasig City</p>
-                    </div>
-                    <p class="text-sm text-gray-500">Mar – Dec 2021 (9 months)</p>
-                </div>
-                <ul class="mt-4 list-disc pl-6 space-y-2 text-gray-700">
-                    <li>Installed, developed, and tested file servers, print servers, and application servers on Linux.</li>
-                    <li>Supported team goals and contributed to continual improvements across the practice.</li>
-                </ul>
+            <div class="skills-category">
+                <strong>DevOps & Tools:</strong> Docker (Containerization), Git/GitHub, Bash
             </div>
-
-            <div>
-                <div class="flex justify-between items-start">
-                    <div>
-                        <h3 class="text-xl font-bold">Founder | PC Repair Shop</h3>
-                        <p class="text-gray-600">Aexteck Computer Sales and Repair • Batangas</p>
-                    </div>
-                    <p class="text-sm text-gray-500">Dec 2022 – Feb 2026</p>
-                </div>
-                <ul class="mt-4 list-disc pl-6 space-y-2 text-gray-700">
-                    <li>Performed hardware and software diagnostics, repairs, parts replacement, and upgrades on desktops, laptops, and peripherals.</li>
-                </ul>
+            <div class="skills-category">
+                <strong>Security & Net:</strong> Server Hardening, Firewalls (IPTables), VAPT Remediation
             </div>
-        </section>
-
-        <!-- EDUCATION -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-semibold text-[#1a73e8] mb-6 border-b pb-3">Education</h2>
-            <div class="space-y-6">
-                <div>
-                    <h3 class="font-bold">City University of Pasay</h3>
-                    <p>BSBA Major in Operations Management / Graduate</p>
-                </div>
-                <div>
-                    <h3 class="font-bold">Paranaque City College</h3>
-                    <p>Diploma in Electrical Technology</p>
-                </div>
-                <div>
-                    <h3 class="font-bold">Paranaque Municipal High School</h3>
-                    <p>High School Graduate</p>
-                </div>
+            <div class="skills-category">
+                <strong>Web Servers:</strong> LAMP/LEMP Stack, Apache, Nginx, WordPress
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- SKILLS -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-semibold text-[#1a73e8] mb-6 border-b pb-3">Skills</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h4 class="font-semibold text-lg mb-3">Google Cloud Security Focus</h4>
-                    <ul class="list-disc pl-6 space-y-2">
-                        <li>Google Cloud Cybersecurity (IAM, VPC, firewall rules, Security Command Center)</li>
-                        <li>Cloud Security & Compliance</li>
-                        <li>VAPT Remediation & Vulnerability Management</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-lg mb-3">Core Technical Skills</h4>
-                    <ul class="list-disc pl-6 space-y-2">
-                        <li>Linux Server Hardening (Red Hat | Ubuntu | SUSE)</li>
-                        <li>AWS & Google Cloud Platform (GCP)</li>
-                        <li>Firewall & IP Tables</li>
-                        <li>LAMP/LEMP Stack (Apache | Nginx)</li>
-                        <li>Containerization & Docker</li>
-                        <li>Bash Scripting</li>
-                        <li>System Performance Monitoring</li>
-                        <li>GitHub / Git</li>
-                    </ul>
-                </div>
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        
+        <div class="job">
+            <div class="job-title">
+                <span>Linux System Administrator & Cloud Engineer <span class="company">| DICT (egov.ph)</span></span>
+                <span class="job-date">Aug 2022 – Oct 2022</span>
             </div>
-        </section>
-
-        <!-- CERTIFICATIONS -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-semibold text-[#1a73e8] mb-6 border-b pb-3">Licenses & Certifications</h2>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="bg-white shadow-sm p-4 rounded-lg">Google Cloud Cyber Security</div>
-                <div class="bg-white shadow-sm p-4 rounded-lg">CompTIA Linux+ powered by LPI</div>
-                <div class="bg-white shadow-sm p-4 rounded-lg">LPIC 1 (Linux System Administrator)</div>
-                <div class="bg-white shadow-sm p-4 rounded-lg">AWS Restart Cloud Architect</div>
-                <div class="bg-white shadow-sm p-4 rounded-lg">Microsoft Azure Fundamentals</div>
-                <div class="bg-white shadow-sm p-4 rounded-lg">RedHat Training (IBM Skills)</div>
-                <div class="bg-white shadow-sm p-4 rounded-lg">ISC2 Certified in Cybersecurity</div>
-                <div class="bg-white shadow-sm p-4 rounded-lg">VMware IT Academy: Cloud and Virtualization Concepts</div>
-            </div>
-        </section>
-
-        <!-- GITHUB PROJECTS -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-semibold text-[#1a73e8] mb-6 border-b pb-3">GitHub Projects</h2>
-            <div class="space-y-4">
-                <a href="https://github.com/aextecki/gcp-sentinel-audit" target="_blank" class="block bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
-                    <p class="font-semibold text-blue-600">gcp-sentinel-audit</p>
-                    <p class="text-sm text-gray-600">GCP Sentinel Audit Project</p>
-                </a>
-                <a href="https://github.com/aextecki/Bash_Scripting_Tutorials" target="_blank" class="block bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
-                    <p class="font-semibold text-blue-600">Bash_Scripting_Tutorials</p>
-                    <p class="text-sm text-gray-600">Bash Scripting Tutorials</p>
-                </a>
-                <a href="https://github.com/aextecki/Java_Industry_Programming_PUP" target="_blank" class="block bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
-                    <p class="font-semibold text-blue-600">Java_Industry_Programming_PUP</p>
-                    <p class="text-sm text-gray-600">Java Industry Programming Project</p>
-                </a>
-            </div>
-        </section>
-
-        <!-- VISITOR COUNTER -->
-        <div class="text-center py-12 border-t border-b">
-            <p class="text-2xl font-medium text-gray-700">Total Visitors to this Resume</p>
-            <p id="count" class="text-7xl font-bold text-[#1a73e8] mt-2">0</p>
+            <ul>
+                <li>Managed and optimized web and application servers across cloud environments (AWS & Azure) for government projects.</li>
+                <li>Executed "lift-and-shift" migrations of legacy on-premise infrastructure safely into the AWS cloud.</li>
+                <li>Developed and automated AWS EC2 backup strategies by provisioning custom AMIs and managing snapshots.</li>
+                <li>Remediated 150+ high-risk and critical vulnerabilities identified by NCERT, meeting 100% security compliance.</li>
+                <li>Collaborated closely with cross-functional development and network teams to implement DevOps principles.</li>
+            </ul>
         </div>
 
-    </div>
+        <div class="job">
+            <div class="job-title">
+                <span>Founder & Cloud Infrastructure Specialist <span class="company">| Aexteck Computer Sales & Repair</span></span>
+                <span class="job-date">Dec 2022 – Present</span>
+            </div>
+            <ul>
+                <li>Engineered custom high-performance workstations and gaming rigs for over 200+ clients.</li>
+                <li>Built and maintained a dedicated Linux home lab environment to test containerized software and AWS architecture deployments.</li>
+            </ul>
+        </div>
 
-    <!-- FOOTER -->
-    <footer class="bg-gray-900 text-white py-8 text-center text-sm">
-        <p>Built as part of the Cloud Resume Challenge on Google Cloud Platform • Zero-cost deployment</p>
-        <p class="mt-2">© 2026 Alex Mortel • Live at storage.googleapis.com/YOUR-BUCKET/index.html</p>
-    </footer>
+        <div class="job">
+            <div class="job-title">
+                <span>Junior Linux System Administrator <span class="company">| 8layertechnologies</span></span>
+                <span class="job-date">Mar 2021 – Dec 2021</span>
+            </div>
+            <ul>
+                <li>Implemented, tested, and updated file, printing, and web application servers on-site.</li>
+                <li>Verified hardware compatibility and configuration interoperations across various Linux-based distributions.</li>
+            </ul>
+        </div>
+        
+        <div class="job">
+            <div class="job-title">
+                <span>Facilities Assistant (Safety Management) <span class="company">| Sykes Asia Inc.</span></span>
+                <span class="job-date">Aug 2015 – Feb 2021</span>
+            </div>
+            <ul>
+                <li>Supervised critical safety systems and building facility management while monitoring risk factors.</li>
+            </ul>
+        </div>
+    </section>
 
-    <script>
-        // ←←← UPDATE THIS AFTER DEPLOYING YOUR CLOUD FUNCTION ←←←
-        const API_URL = "https://YOUR-REGION-YOUR-PROJECT.cloudfunctions.net/visitor_count";
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>City University of Pasay</strong> - BSBA Major in Operations Management</li>
+            <li><strong>Paranaque City College</strong> - Diploma in Electrical Technology</li>
+        </ul>
+    </section>
+</div>
 
-        fetch(API_URL)
-            .then(res => res.json())
-            .then(data => {
-                document.getElementById("count").textContent = data.count.toLocaleString();
-            })
-            .catch(() => {
-                document.getElementById("count").textContent = "—";
-            });
-    </script>
+<!-- Cloud Resume Challenge Counter Script Connection -->
+<script>
+    // Replace the URL inside quotes with your actual API Gateway Invoke URL once created
+    const apiEndpoint = "https://YOUR_API_GATEWAY_INVOKE_URL/counter";
+
+    async function getVisitorCount() {
+        try {
+            const response = await fetch(apiEndpoint);
+            const data = await response.json();
+            document.getElementById("counter").innerText = data.count;
+        } catch (error) {
+            console.error("Error communicating with counter API:", error);
+            // Fallback text if the API isn't built or live yet
+            document.getElementById("counter").innerText = "Live";
+        }
+    }
+
+    // Call function on page load
+    window.onload = getVisitorCount;
+</script>
 
 </body>
 </html>
