@@ -1,3 +1,3 @@
-# alex-mortel-gcp-cloud-resume-challenge (ongoing)
+# alex-mortel-AWS-cloud-resume-challenge (ongoing)
 
-# The Cloud Resume Challenge – GCP Edition (Zero-Cost Implementation)
+# The Cloud Resume Challenge – AWS Edition (Zero-Cost Implementation)
